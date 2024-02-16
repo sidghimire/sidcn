@@ -1,4 +1,8 @@
-import { Text, TouchableOpacity, TouchableOpacityProps } from "react-native";
+import {
+  Text,
+  TouchableOpacity,
+  TouchableOpacityProps,
+} from "react-native";
 import React, { ReactNode } from "react";
 import { twMerge } from "tailwind-merge";
 import { classifyChild, separateTextClassNames } from "../utils/textFunction";
