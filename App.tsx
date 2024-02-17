@@ -10,6 +10,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "./components/sidcn/ui/accordion";
+import { Badge } from "./components/sidcn/ui/badge";
 
 export default function App() {
   const { colorScheme, toggleColorScheme } = useColorScheme();
@@ -19,20 +20,7 @@ export default function App() {
         Outline
       </Button>
 
-      <Accordion>
-        <AccordionItem>
-          <AccordionTrigger className="text-red-700">Is it accessible?</AccordionTrigger>
-          <AccordionContent>
-            Yes. It adheres to the WAI-ARIA design pattern.
-          </AccordionContent>
-        </AccordionItem>
-        <AccordionItem>
-          <AccordionTrigger>Is it accessible?</AccordionTrigger>
-          <AccordionContent>
-            Yes. It adheres to the WAI-ARIA design pattern.
-          </AccordionContent>
-        </AccordionItem>
-      </Accordion>
+      <Badge variant="destructive">Badge</Badge>
 
       <StatusBar style="auto" />
     </View>
