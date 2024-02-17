@@ -7,6 +7,14 @@ import { Button } from "./components/sidcn/ui/button";
 
 import { Input } from "./components/sidcn/ui/input";
 import Label from "./components/sidcn/ui/label";
+import { Card } from "./components/sidcn/ui/card";
+import {
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "./components/sidcn/ui/card";
 
 export default function App() {
   const { colorScheme, toggleColorScheme } = useColorScheme();
@@ -15,9 +23,18 @@ export default function App() {
       <Button variant="destructive" onPress={toggleColorScheme}>
         Outline
       </Button>
-      <View className="w-full">
-        <Label>Hi</Label>
-        <Input type="Password" placeholder="Password" />
+
+      <View className="w-full mt-6">
+        <Card>
+          <CardHeader>
+            <CardTitle>Create Project</CardTitle>
+            <CardDescription>
+              Deploy your new project in one-click.
+            </CardDescription>
+          </CardHeader>
+          <CardContent>Card Content</CardContent>
+          <CardFooter>Card Footer</CardFooter>
+        </Card>
       </View>
       <StatusBar style="auto" />
     </View>
