@@ -55,4 +55,4 @@ const variants = {
   link: "text-black dark:text-white underline",
 };
 
-export default Button;
+export {Button};

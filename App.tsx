@@ -3,14 +3,9 @@ import "./global.css";
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 import { useColorScheme } from "nativewind";
-import Button from "./components/sidcn/ui/button";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "./components/sidcn/ui/accordion";
-import { Badge } from "./components/sidcn/ui/badge";
+import { Button } from "./components/sidcn/ui/button";
+
+import { Input } from "./components/sidcn/ui/input";
 
 export default function App() {
   const { colorScheme, toggleColorScheme } = useColorScheme();
@@ -19,9 +14,7 @@ export default function App() {
       <Button variant="destructive" onPress={toggleColorScheme}>
         Outline
       </Button>
-
-      <Badge variant="destructive">Badge</Badge>
-
+      <Input type="email" placeholder="Email" className="mt-10" secureTextEntry />
       <StatusBar style="auto" />
     </View>
   );
