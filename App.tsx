@@ -20,13 +20,13 @@ export default function App() {
       </Button>
 
       <Accordion>
-        <AccordionItem value="item-1">
+        <AccordionItem>
           <AccordionTrigger className="text-red-700">Is it accessible?</AccordionTrigger>
           <AccordionContent>
             Yes. It adheres to the WAI-ARIA design pattern.
           </AccordionContent>
         </AccordionItem>
-        <AccordionItem value="item-1">
+        <AccordionItem>
           <AccordionTrigger>Is it accessible?</AccordionTrigger>
           <AccordionContent>
             Yes. It adheres to the WAI-ARIA design pattern.

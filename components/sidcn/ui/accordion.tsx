@@ -25,7 +25,6 @@ const Accordion: React.FC<AccordionProps> = ({ children, className }) => {
 
 interface AccordionItemProps {
   children: React.ReactNode;
-  value: string;
   height?: number;
   className?: string;
 }
