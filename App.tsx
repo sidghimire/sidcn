@@ -14,6 +14,7 @@ export default function App() {
       <Button variant="destructive" onPress={toggleColorScheme}>
         Outline
       </Button>
+      
       <Input type="email" placeholder="Email" className="mt-10" secureTextEntry />
       <StatusBar style="auto" />
     </View>
