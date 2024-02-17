@@ -38,7 +38,7 @@ const Alert: React.FC<AlertProps> = ({
 
   const classSeparation = twMerge(
     variants.baseClass,
-    variants[variant as keyof typeof variants],
+    variants[variant],
     className
   );
 
@@ -73,7 +73,7 @@ const AlertTitle: React.FC<AlertTitleProps> = ({
 }) => {
   const child = classifyChild(children);
   const classSeparation = separateTextClassNames(
-    twMerge(titleVariant[variant as keyof typeof titleVariant], className)
+    twMerge(titleVariant[variant], className)
   );
 
   return (
@@ -102,7 +102,7 @@ const AlertDescription: React.FC<AlertDescriptionProps> = ({
   const classSeparation = separateTextClassNames(
     twMerge(
       descriptionVariant.baseClass,
-      descriptionVariant[variant as keyof typeof descriptionVariant],
+      descriptionVariant[variant],
       className
     )
   );

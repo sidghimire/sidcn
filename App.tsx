@@ -5,25 +5,35 @@ import { StyleSheet, Text, View } from "react-native";
 import { useColorScheme } from "nativewind";
 import Button from "./components/sidcn/ui/button";
 import {
-  Alert,
-  AlertDescription,
-  AlertTitle,
-} from "./components/sidcn/ui/alert";
-import { Terminal } from "lucide-react-native";
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "./components/sidcn/ui/accordion";
 
 export default function App() {
-  const { colorScheme,toggleColorScheme } = useColorScheme();
+  const { colorScheme, toggleColorScheme } = useColorScheme();
   return (
     <View style={styles.container} className="bg-white dark:bg-black px-4">
-      <Button variant="destructive" onPress={toggleColorScheme}>Outline</Button>
+      <Button variant="destructive" onPress={toggleColorScheme}>
+        Outline
+      </Button>
 
-      <Alert variant="destructive" className={''}>
-        <Terminal color={colorScheme=="light"?'#ff0000':'#ff0000'} size={20} />
-        <AlertTitle>Heads up !</AlertTitle>
-        <AlertDescription className=''>
-          You can add components to your app using the cli.
-        </AlertDescription>
-      </Alert>
+      <Accordion>
+        <AccordionItem value="item-1">
+          <AccordionTrigger className="text-red-700">Is it accessible?</AccordionTrigger>
+          <AccordionContent className="bg-black">
+            Yes. It adheres to the WAI-ARIA design pattern.
+          </AccordionContent>
+        </AccordionItem>
+        <AccordionItem value="item-1">
+          <AccordionTrigger>Is it accessible?</AccordionTrigger>
+          <AccordionContent>
+            Yes. It adheres to the WAI-ARIA design pattern.
+          </AccordionContent>
+        </AccordionItem>
+      </Accordion>
+
       <StatusBar style="auto" />
     </View>
   );
