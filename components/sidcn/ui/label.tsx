@@ -1,24 +1,21 @@
 import React from "react";
-import { Text, TextProps } from "react-native";
+import { Text } from "react-native";
 import { twMerge } from "tailwind-merge";
-import { useColorScheme } from "nativewind";
+import { separateTextClassNames, classifyChild } from "../utils/textFunction";
 
-interface LabelProps extends TextProps {
-  children: React.ReactNode;
-  className?: string;
-}
+const Label = ({ children, className = "", ...props }) => {
+  const childType = classifyChild(children);
 
-const Label: React.FC<LabelProps> = ({ children, className = "", ...props }) => {
-  const labelStyles = twMerge(
-    "mb-2 text-[16px] font-bold text-[#000] dark:text-[#fff]",
-    className
-  );
+  if (childType === "text") {
+    return (
+      <Text className={twMerge("text-sm m-1 text-gray-900 dark:text-gray-100", className)} {...props}>
+        {children}
+      </Text>
+    );
+  }
 
-  return (
-    <Text className={labelStyles} {...props}>
-      {children}
-    </Text>
-  );
+  // If it's a component, return it as is
+  return children;
 };
 
-export { Label };
+export default Label;

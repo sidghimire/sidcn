@@ -6,6 +6,7 @@ import { useColorScheme } from "nativewind";
 import { Button } from "./components/sidcn/ui/button";
 
 import { Input } from "./components/sidcn/ui/input";
+import Label from "./components/sidcn/ui/label";
 
 export default function App() {
   const { colorScheme, toggleColorScheme } = useColorScheme();
@@ -14,8 +15,10 @@ export default function App() {
       <Button variant="destructive" onPress={toggleColorScheme}>
         Outline
       </Button>
-      
-      <Input type="email" placeholder="Email" className="mt-10" secureTextEntry />
+      <View className="w-full">
+        <Label>Hi</Label>
+        <Input type="Password" placeholder="Password" />
+      </View>
       <StatusBar style="auto" />
     </View>
   );
