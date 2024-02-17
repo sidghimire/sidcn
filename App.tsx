@@ -22,7 +22,7 @@ export default function App() {
       <Accordion>
         <AccordionItem value="item-1">
           <AccordionTrigger className="text-red-700">Is it accessible?</AccordionTrigger>
-          <AccordionContent className="bg-black">
+          <AccordionContent>
             Yes. It adheres to the WAI-ARIA design pattern.
           </AccordionContent>
         </AccordionItem>
