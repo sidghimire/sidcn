@@ -7,6 +7,55 @@
 
 ### Documentation: [sidcn.vercel.app](https://sidcn.vercel.app)
 
+- [x] Accordion
+- [x] Alert
+- [x] Badge
+- [x] Button
+- [x] Card
+- [x] Input
+- [x] Label
+- [x] Bottom Sheet
+- [ ] Alert Dialog
+- [ ] Aspect Ratio
+- [x] Avatar
+- [ ] Calendar
+- [ ] CarouselNew
+- [ ] Checkbox
+- [ ] Collapsible
+- [ ] Combobox
+- [ ] Command
+- [ ] Context Menu
+- [ ] Data Table
+- [ ] Date Picker
+- [ ] Dialog
+- [ ] DrawerNew
+- [ ] Dropdown Menu
+- [ ] Form
+- [ ] Hover Card
+- [ ] Menubar
+- [ ] Navigation Menu
+- [ ] PaginationNew
+- [ ] Popover
+- [ ] Progress
+- [ ] Radio Group
+- [ ] ResizableNew
+- [ ] Scroll Area
+- [ ] Select
+- [ ] Separator
+- [ ] Sheet
+- [ ] Skeleton
+- [ ] Slider
+- [ ] SonnerNew
+- [ ] Switch
+- [ ] Table
+- [ ] Tabs
+- [ ] Textarea
+- [ ] Toast
+- [ ] Toggle
+- [ ] Toggle Group
+- [ ] Tooltip
+
+
 Buckle up, fellow developer! 🤠 Get ready to embark on a journey into the world of **sidcn**, the dazzling UI component library that's about to revolutionize your React Native and Expo projects. Say goodbye to the mundane and hello to mobile app greatness!
 
 ## What's the Buzz About sidcn?
