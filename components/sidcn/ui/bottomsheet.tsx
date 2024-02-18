@@ -113,6 +113,7 @@ const BottomSheetContent: React.FC<BottomSheetContentProps> = ({
         <Pressable
           onPress={() => {
             translateY.value = height ? -height : -windowHeight / 2;
+            //@ts-ignore
             toggle();
           }}
           className="absolute mx-auto"
