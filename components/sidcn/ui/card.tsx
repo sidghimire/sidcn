@@ -137,7 +137,7 @@ const CardFooter: React.FC<CardFooterProps> = ({
 }) => {    
   const categorizedStyles = separateTextClassNames(className);
   return (
-    <View className={twMerge(className)}>
+    <View className={twMerge('mt-4',className)}>
       {React.Children.map(children, (child, index) => {
         const childType = classifyChild(child);
 

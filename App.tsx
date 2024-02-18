@@ -20,13 +20,18 @@ import {
   AvatarFallback,
   AvatarImage,
 } from "./components/sidcn/ui/avatar";
+import {
+  BottomSheet,
+  BottomSheetContent,
+  BottomSheetTrigger,
+} from "./components/sidcn/ui/bottomsheet";
 
 export default function App() {
   const { colorScheme, toggleColorScheme } = useColorScheme();
   return (
     <View style={styles.container} className="bg-white dark:bg-black px-4">
-      <Button variant="destructive" onPress={toggleColorScheme}>
-        Outline
+      <Button variant="primary" onPress={toggleColorScheme}>
+        Toggle Theme
       </Button>
 
       <View className="w-full mt-6">
@@ -37,18 +42,35 @@ export default function App() {
               Deploy your new project in one-click.
             </CardDescription>
           </CardHeader>
-          <CardContent>Card Content</CardContent>
-          <CardFooter>Card Footer</CardFooter>
+          <CardContent>
+            <Avatar className="ml-auto">
+              <AvatarImage
+                source={{
+                  uri: "https://variety.com/wp-content/uploads/2021/04/Avatar.jpg",
+                }}
+              />
+              <AvatarFallback>CN</AvatarFallback>
+            </Avatar>
+            <Label className="text-gray-700">User Name</Label>
+            <Input placeholder="Email" />
+            <Label className="text-gray-700 mt-4">Password</Label>
+            <Input placeholder="Password" secureTextEntry />
+            <Label className="text-gray-700 mt-4">Address</Label>
+            <Input placeholder="Address"  />
+          </CardContent>
+          <CardFooter>
+            <Button>Submit</Button>
+          </CardFooter>
         </Card>
       </View>
-      <Avatar>
-        <AvatarImage
-          source={{
-            uri: "https://variety.com/wp-content/uploads/2021/04/Avatar.jpg",
-          }}
-        />
-        <AvatarFallback>CN</AvatarFallback>
-      </Avatar>
+
+      <BottomSheet>
+        <BottomSheetTrigger>Open Bottom Sheet 1</BottomSheetTrigger>
+        <BottomSheetContent>
+          <Text>This Bottom Sheet</Text>
+        </BottomSheetContent>
+      </BottomSheet>
+
       <StatusBar style="auto" />
     </View>
   );

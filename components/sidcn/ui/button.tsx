@@ -36,7 +36,7 @@ const Button: React.FC<ButtonProps> = ({
       {...props}
     >
       {child == "text" && (
-        <Text className={classSeparation.textSpecific}>{children}</Text>
+        <Text className={twMerge('text-center',classSeparation.textSpecific)}>{children}</Text>
       )}
       {child == "component" && <>{children}</>}
     </TouchableOpacity>

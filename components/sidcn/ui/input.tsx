@@ -29,6 +29,7 @@ const Input: React.FC<InputProps> = ({
       className={twMerge(inputStyles.textSpecific, inputStyles.nonTextSpecific)}
       placeholder={placeholder}
       keyboardType={type === "email" ? "email-address" : "default"}
+      autoCapitalize={'none'}
       {...props}
     />
   );

@@ -5,9 +5,10 @@ import { classifyChild, separateTextClassNames } from "../utils/textFunction";
 
 interface AvatarProps {
   children: ReactNode;
+  className?: string;
 }
 
-const Avatar: React.FC<AvatarProps> = ({ children }) => {
+const Avatar: React.FC<AvatarProps> = ({ children, className }) => {
   const [imageError, setImageError] = useState(false);
 
   const handleImageError = () => {
@@ -37,19 +38,19 @@ const Avatar: React.FC<AvatarProps> = ({ children }) => {
   });
 
   return (
-    <>
+    <View className={twMerge(className)}>
       {!imageError ? (
         <>{avatarImageElement[0]}</>
       ) : (
         <>{avatarFallBackElement[0]}</>
       )}
-    </>
+    </View>
   );
 };
 
 interface AvatarImageProps extends ImageProps {
   className?: string;
-  handleImageError: () => void; // define the prop
+  handleImageError?: () => void; // define the prop
   // Other AvatarImage specific props...
 }
 
