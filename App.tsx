@@ -15,6 +15,11 @@ import {
   CardHeader,
   CardTitle,
 } from "./components/sidcn/ui/card";
+import {
+  Avatar,
+  AvatarFallback,
+  AvatarImage,
+} from "./components/sidcn/ui/avatar";
 
 export default function App() {
   const { colorScheme, toggleColorScheme } = useColorScheme();
@@ -36,6 +41,14 @@ export default function App() {
           <CardFooter>Card Footer</CardFooter>
         </Card>
       </View>
+      <Avatar>
+        <AvatarImage
+          source={{
+            uri: "https://variety.com/wp-content/uploads/2021/04/Avatar.jpg",
+          }}
+        />
+        <AvatarFallback>CN</AvatarFallback>
+      </Avatar>
       <StatusBar style="auto" />
     </View>
   );
