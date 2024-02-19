@@ -36,10 +36,13 @@ const BottomSheet: React.FC<BottomSheetProps> = ({ children }) => {
           (child.type as any).displayName || (child.type as any).name;
 
         if (elementType === "BottomSheetTrigger") {
+          //@ts-expect-error
           acc.trigger.push(child);
         } else if (elementType === "BottomSheetContent") {
+          //@ts-expect-error
           acc.content.push(child);
         } else {
+          //@ts-expect-error
           acc.other.push(child);
         }
       } else {
