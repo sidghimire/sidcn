@@ -28,13 +28,11 @@ const Checkbox = ({
       onValueChange(newValue);
     }
   };
-
   const variants = {
     baseClass: `h-7 w-7 rounded-md border border-gray-400 dark:border-gray-600 items-center justify-center ${
       checked && "bg-black dark:bg-white"
     }`,
   };
-
   return (
     <TouchableOpacity
       activeOpacity={0.98}

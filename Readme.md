@@ -20,7 +20,7 @@
 - [x] Avatar
 - [ ] Calendar
 - [ ] CarouselNew
-- [ ] Checkbox
+- [x] Checkbox
 - [ ] Collapsible
 - [ ] Combobox
 - [ ] Command
