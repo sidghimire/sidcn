@@ -14,7 +14,7 @@ const Label: React.FC<LabelProps> = ({ children, className = '', ...props }) => 
   if (childType === 'text') {
     return (
       <Text
-        className={twMerge('text-sm m-1 text-gray-900 dark:text-gray-100', className)}
+        className={twMerge('text-md m-1 text-gray-900 dark:text-gray-100', className)}
         {...props}
       >
         {children}

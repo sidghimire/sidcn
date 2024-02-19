@@ -47,7 +47,7 @@ const Button: React.FC<ButtonProps> = ({
 };
 
 const variants = {
-  baseClass: "h-[48px] px-4 rounded-md item-center justify-center text-[16px]",
+  baseClass: "p-4 px-4 rounded-md item-center justify-center text-[16px]",
   primary: "dark:text-black text-white bg-black dark:bg-white",
   secondary:
     "text-gray-300 dark:text-white bg-gray-200 dark:bg-[#1d1d20] text-black",

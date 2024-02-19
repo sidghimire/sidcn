@@ -25,6 +25,7 @@ import {
   BottomSheetContent,
   BottomSheetTrigger,
 } from "./components/sidcn/ui/bottomsheet";
+import { Badge } from "./components/sidcn/ui/badge";
 
 export default function App() {
   const { colorScheme, toggleColorScheme } = useColorScheme();
@@ -51,6 +52,7 @@ export default function App() {
               />
               <AvatarFallback>CN</AvatarFallback>
             </Avatar>
+            <Badge>Hi</Badge>
             <Label className="text-gray-700">User Name</Label>
             <Input placeholder="Email" />
             <Label className="text-gray-700 mt-4">Password</Label>

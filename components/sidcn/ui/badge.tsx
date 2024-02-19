@@ -22,7 +22,7 @@ const Badge: React.FC<BadgeProps> = ({
   ...props
 }) => {
   const variants = {
-    baseClass: "p-2 px-4 rounded-full text-sm items-center justify-center",
+    baseClass: "p-2 px-4 rounded-full text-lg items-center justify-center",
     primary: "dark:text-black text-white bg-black dark:bg-white",
     secondary:
       "text-gray-300 dark:text-white bg-gray-200 dark:bg-[#1d1d20] text-black",
