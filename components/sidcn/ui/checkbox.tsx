@@ -30,7 +30,7 @@ const Checkbox = ({
   };
 
   const variants = {
-    baseClass: `h-7 w-7 rounded-md border border-gray-400 items-center justify-center ${
+    baseClass: `h-7 w-7 rounded-md border border-gray-400 dark:border-gray-600 items-center justify-center ${
       checked && "bg-black dark:bg-white"
     }`,
   };
