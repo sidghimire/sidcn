@@ -26,52 +26,22 @@ import {
   BottomSheetTrigger,
 } from "./components/sidcn/ui/bottomsheet";
 import { Badge } from "./components/sidcn/ui/badge";
+import { Checkbox } from "./components/sidcn/ui/checkbox";
+import { useState } from "react";
 
 export default function App() {
   const { colorScheme, toggleColorScheme } = useColorScheme();
+  const [toggle, setToggle] = useState(false);
   return (
     <View style={styles.container} className="bg-white dark:bg-black px-4">
       <Button variant="primary" onPress={toggleColorScheme}>
-        Toggle Theme
+        Toggle
       </Button>
 
-      <View className="w-full mt-6">
-        <Card>
-          <CardHeader>
-            <CardTitle>Create Project</CardTitle>
-            <CardDescription>
-              Deploy your new project in one-click.
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
-            <Avatar className="ml-auto">
-              <AvatarImage
-                source={{
-                  uri: "https://variety.com/wp-content/uploads/2021/04/Avatar.jpg",
-                }}
-              />
-              <AvatarFallback>CN</AvatarFallback>
-            </Avatar>
-            <Badge>Hi</Badge>
-            <Label className="text-gray-700">User Name</Label>
-            <Input placeholder="Email" />
-            <Label className="text-gray-700 mt-4">Password</Label>
-            <Input placeholder="Password" secureTextEntry />
-            <Label className="text-gray-700 mt-4">Address</Label>
-            <Input placeholder="Address"  />
-          </CardContent>
-          <CardFooter>
-            <Button>Submit</Button>
-          </CardFooter>
-        </Card>
+      <View className="flex flex-row mt-10">
+        <Checkbox disabled={true} value={toggle} onValueChange={setToggle} />
+        {toggle && <Label>This is the Label for Checkbox</Label>}
       </View>
-
-      <BottomSheet>
-        <BottomSheetTrigger>Open Bottom Sheet 1</BottomSheetTrigger>
-        <BottomSheetContent>
-          <Text>This Bottom Sheet</Text>
-        </BottomSheetContent>
-      </BottomSheet>
 
       <StatusBar style="auto" />
     </View>
