@@ -9,7 +9,7 @@
     "web": "expo start --web"
   },
   "dependencies": {
-    "expo": "~50.0.6",
+    "expo": "50.0.7",
     "expo-status-bar": "~1.11.1",
     "lucide-react-native": "^0.331.0",
     "nativewind": "^4.0.1",

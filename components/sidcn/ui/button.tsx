@@ -1,8 +1,4 @@
-import {
-  Text,
-  TouchableOpacity,
-  TouchableOpacityProps,
-} from "react-native";
+import { Text, TouchableOpacity, TouchableOpacityProps } from "react-native";
 import React, { ReactNode } from "react";
 import { twMerge } from "tailwind-merge";
 import { classifyChild, separateTextClassNames } from "../utils/textFunction";
@@ -36,7 +32,14 @@ const Button: React.FC<ButtonProps> = ({
       {...props}
     >
       {child == "text" && (
-        <Text className={twMerge('text-center',classSeparation.textSpecific)}>{children}</Text>
+        <Text
+          className={twMerge(
+            "text-center mx-auto",
+            classSeparation.textSpecific
+          )}
+        >
+          {children}
+        </Text>
       )}
       {child == "component" && <>{children}</>}
     </TouchableOpacity>
@@ -55,4 +58,4 @@ const variants = {
   link: "text-black dark:text-white underline",
 };
 
-export {Button};
+export { Button };
