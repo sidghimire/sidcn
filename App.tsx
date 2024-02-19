@@ -38,10 +38,52 @@ export default function App() {
         Toggle
       </Button>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       <View className="flex flex-row mt-10">
-        <Checkbox disabled={true} value={toggle} onValueChange={setToggle} />
+
+
+        <Checkbox disabled={false} value={toggle} onValueChange={setToggle} />
+
+
         {toggle && <Label>This is the Label for Checkbox</Label>}
+
       </View>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
       <StatusBar style="auto" />
     </View>
