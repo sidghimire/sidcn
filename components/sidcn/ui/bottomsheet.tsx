@@ -193,7 +193,7 @@ const BottomSheetTrigger: React.FC<BottomSheetTriggerProps> = ({
       {child == "text" && (
         <Text
           className={twMerge(
-            `text-[#000] dark:text-[#fff] text-[14px] font-medium`,
+            `text-[#000] dark:text-[#fff] text-[20px] font-medium`,
             classSeparation.textSpecific
           )}
         >

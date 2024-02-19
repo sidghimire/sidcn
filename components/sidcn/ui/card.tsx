@@ -184,7 +184,7 @@ const CardTitle: React.FC<CardTitleProps> = ({ children, className = "" }) => {
             {childType === "text" && (
               <Text
                 className={twMerge(
-                  "text-[20px] tracking-normal font-bold dark:text-[#efefef] text-[#212020]",
+                  "text-[28px] tracking-normal font-bold dark:text-[#efefef] text-[#212020]",
                   categorizedStyles.textSpecific
                 )}
               >
@@ -225,7 +225,7 @@ const CardDescription: React.FC<CardDescriptionProps> = ({
             {childType === "text" && (
               <Text
                 className={twMerge(
-                  "text-[12px] mt-1 dark:text-[#cfcfcf] text-[#413e3e] font-light tracking-wide",
+                  "text-[16px] mt-1 dark:text-[#cfcfcf] text-[#413e3e] font-light tracking-wide",
                   categorizedStyles.textSpecific
                 )}
               >

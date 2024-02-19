@@ -61,7 +61,7 @@ const AvatarImage: React.FC<AvatarImageProps> = ({
 }) => {
   return (
     <Image
-      className={twMerge("h-12 w-12 rounded-full", className)}
+      className={twMerge("h-14 w-14 rounded-full", className)}
       onError={handleImageError}
       {...props}
     />
@@ -85,7 +85,7 @@ const AvatarFallback: React.FC<AvatarFallbackProps> = ({
   return (
     <View
       className={twMerge(
-        "h-12 w-12 rounded-full bg-gray-300 dark:bg-gray-600 items-center justify-center",
+        "h-14 w-14 rounded-full bg-gray-300 dark:bg-gray-600 items-center justify-center",
         classSeparation.nonTextSpecific
       )}
       {...props}
